@@ -61,6 +61,7 @@ func TestDriver(t *testing.T) {
 		for {
 			f, err := ftp.Connect(fmt.Sprintf("localhost:%d", opt.Port))
 			if err != nil {
+				fmt.Printf("Connect error: %v\n", err)
 				// Give server 0.5 seconds to get to the listening state
 				time.Sleep(500 * time.Millisecond)
 				tries--
