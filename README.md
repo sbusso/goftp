@@ -11,6 +11,10 @@ Full documentation for the package is available on [godoc](http://pkg.go.dev/gof
 
     go get goftp.io/server
 
+If you want to use v2 version which has some break change on interfaces, just
+
+    go get goftp.io/server/v2
+
 ## Usage
 
 To boot a FTP server you will need to provide a driver that speaks to
